@@ -1,0 +1,66 @@
+/*this shit dumb ass hell*/
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 200% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+@font-face {
+    font-family: TwCenMT;
+    src: url(assets/TwCenMTLight.otf);
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+#bg {
+	background: url('assets/cool.png');
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	filter: blur(10px);
+	opacity: 0.9;
+	transform:scale(2);
+}
+
+#main {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 40%;
+	height: 40%;
+	transform: translate(-50%, -50%);
+}
+
+#main-text{
+    font-family: TwCenMT;
+    text-align: center;
+}
+
+.download-button{
+    width: 300px;
+    height: auto;
+}
